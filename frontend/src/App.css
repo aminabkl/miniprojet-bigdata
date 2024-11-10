@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* background: linear-gradient(to bottom right, #f2f2f2, #e0e0e0); */
+  background: rgb(255, 255, 255);
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+.app-h1 {
+  /* background-color: #f2f2f2; */
+  /* height: 70px; */
+  padding: 28px;
+  border-left: #007bff 13px solid;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container {
+  max-width: 960px;
+  margin: 30px auto;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+.population-trend-header,
+.tableau-header {
+  margin-top: 5rem;
+}
+.population-trend-header,
+.country-comparison-header,
+.tableau-header {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  gap: 15px;
+}
+
+.app-div-pop-comp {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Population Trend Styles */
+.population-trend {
+  margin-bottom: 30px;
+  display: grid;
+  justify-content: center;
+  /* gap: 2rem; */
+}
+
+.trend-div {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+.pop-div-block {
+  display: block;
+}
+h4 {
+  color: black;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 15px;
+}
+.chart {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.122);
+  border-radius: 8px;
+  width: 66rem;
+  height: 28rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pop-block-1,
+.pop-block-2 {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.122);
+  border-radius: 8px;
+  background-color: #007bff38;
+  align-items: center;
+  margin-top: 1.5rem;
+  /* width: fit-content; */
+  /* height: 6rem; */
+  padding: 2rem 3rem;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.population-trend h3,
+.tableau-h3 {
+  color: black;
+  /* color: #333; */
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.select-div {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.select-menu-app {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  /* margin-bottom: 2rem; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem 3rem 3rem 3rem;
+  border-radius: 8px;
+}
+/* Country Comparison Styles */
+.country-comparison {
+  margin-top: 5rem;
+  margin-bottom: 30px;
+  display: grid;
+  justify-content: center;
+}
+label {
+  font-size: 1.2em;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.country-comparison h3 {
+  color: black;
+  /* color: #333; */
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Country Table Styles */
+.country-table-container {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  display: grid;
+  justify-content: center;
+}
+
+.country-table {
+  border-collapse: collapse;
+  width: 80rem;
+  /* width: 100%; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Hide overflowing content */
+  background: white; /* Make table background white */
+  font-family: "Arial", sans-serif;
+  border-radius: 8px;
+}
+
+.country-table th,
+.country-table td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  font-weight: normal;
+}
+
+.country-table th {
+  background-color: #f8f8f8;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.country-table th:hover {
+  background-color: #e0e0e0; /* Slightly darker on hover */
+}
+
+.country-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2ea; /* Alternate row shading */
+}
+
+.country-table tbody tr:hover {
+  background-color: #e0e0e0c7; /* Slightly darker on hover */
+  cursor: pointer;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  font-weight: bold;
+}
+
+.pagination button {
+  background: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.pagination button:hover {
+  background: #046ddf;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.pagination button:disabled {
+  background: #ccc; /* Disabled button styles */
+  cursor: not-allowed;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 200px;
+  padding: 8px 15px;
+  border: none;
+  border-bottom: #046ddf 2px solid;
+  /* border: #333 1px solid; */
+  /* border-radius: 4px; */
+  font-size: 1em;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path d='M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z' fill='%23333' /></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the dropdown */
+select option {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+select:focus {
+  outline: none;
+  border: none;
+  border-bottom: #046ddf 2px solid; /* Highlight bottom border on focus */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+select::-ms-expand {
+  display: none; /* Retire l'icône par défaut sur Internet Explorer */
+}
+
+.recharts-wrapper {
+  width: 60rem !important;
+  height: 400px !important;
+}
